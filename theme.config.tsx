@@ -1,18 +1,18 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import React from "react";
+import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <span>BARQ! Knowledge Base</span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: "https://github.com/FurryApp/knowledge-base",
   },
   chat: {
-    link: 'https://discord.com',
+    link: "https://barq.app/discord",
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: "https://github.com/FurryApp/knowledge-base",
   footer: {
-    text: 'Nextra Docs Template',
+    text: "BARQ! Knowledge Base",
   },
-}
+};
 
-export default config
+export default config;
