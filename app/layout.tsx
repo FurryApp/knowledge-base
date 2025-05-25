@@ -9,7 +9,7 @@ import { ReactNode } from 'react';
 export const metadata = {
   title: {
     template: '%s | BARQ! Knowledge Base',
-    default: 'BARQ! Knowledge Base'
+    default: 'BARQ! Knowledge Base',
   },
   description: 'Comprehensive knowledge base for BARQ! - guides, tutorials, and documentation',
   keywords: ['BARQ', 'knowledge base', 'documentation', 'guides'],
@@ -19,11 +19,11 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    siteName: 'BARQ! Knowledge Base'
+    siteName: 'BARQ! Knowledge Base',
   },
   twitter: {
-    card: 'summary_large_image'
-  }
+    card: 'summary_large_image',
+  },
 };
 
 interface RootLayoutProps {
@@ -47,7 +47,6 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       </Head>
       <body>
         <Layout
-          // banner={banner}
           navbar={<Navbar />}
           pageMap={await getPageMap()}
           docsRepositoryBase="https://github.com/FurryApp/knowledge-base"
