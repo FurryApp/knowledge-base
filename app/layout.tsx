@@ -15,6 +15,13 @@ interface RootLayoutProps {
   children: ReactNode;
 }
 
+/**
+ * Defines the root layout for the application, providing global HTML structure and theming.
+ *
+ * Renders the Nextra documentation layout with custom navigation, footer, and page map, and applies global metadata such as language, direction, theme color, and favicon.
+ *
+ * @param children - The content to be rendered within the layout.
+ */
 export default async function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" dir="ltr" suppressHydrationWarning>

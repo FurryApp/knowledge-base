@@ -1,6 +1,11 @@
 import Image from 'next/image';
 import { Navbar as NavbarComponent } from 'nextra-theme-docs';
 
+/**
+ * Renders the application's navigation bar with custom logo and external links.
+ *
+ * Displays a navigation bar using the Nextra Docs theme, featuring a Discord chat link, a GitHub project link, and a logo with the "BARQ! Knowledge Base" label.
+ */
 export default function Navbar() {
   return (
     <NavbarComponent
