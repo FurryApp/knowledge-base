@@ -7,8 +7,23 @@ import { getPageMap } from 'nextra/page-map';
 import { ReactNode } from 'react';
 
 export const metadata = {
-  // Define your metadata here
-  // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
+  title: {
+    template: '%s | BARQ! Knowledge Base',
+    default: 'BARQ! Knowledge Base'
+  },
+  description: 'Comprehensive knowledge base for BARQ! - guides, tutorials, and documentation',
+  keywords: ['BARQ', 'knowledge base', 'documentation', 'guides'],
+  authors: [{ name: 'BARQ! Team' }],
+  creator: 'BARQ! Team',
+  metadataBase: new URL('https://knowledge.barq.app'), // Update with actual domain
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'BARQ! Knowledge Base'
+  },
+  twitter: {
+    card: 'summary_large_image'
+  }
 };
 
 interface RootLayoutProps {
