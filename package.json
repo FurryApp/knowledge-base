@@ -4,13 +4,13 @@
   "description": "BARQ! Knowledge Base",
   "scripts": {
     "dev": "next --turbopack",
-    "build": "next build",
+    "build": "NEXT_PRIVATE_STANDALONE=true next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "pagefind --site .next/server/app --output-path public/_pagefind",
+    "postbuild": "opennextjs-cloudflare build -s && pagefind --site .next/server/app --output-path public/_pagefind",
     "check-updates": "npx npm-check-updates --format group -i",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "preview": "npm run build && wrangler dev",
+    "deploy": "wrangler deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "repository": {
