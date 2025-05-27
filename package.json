@@ -8,7 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "postbuild": "pagefind --site .next/server/app --output-path public/_pagefind",
-    "check-updates": "npx npm-check-updates --format group -i"
+    "check-updates": "npx npm-check-updates --format group -i",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
   },
   "homepage": "https://github.com/FurryApp/knowledge-base#readme",
   "dependencies": {
+    "@opennextjs/cloudflare": "^1.0.4",
     "next": "^15.3.2",
     "nextra": "4.3.0-alpha.22",
     "nextra-theme-docs": "4.3.0-alpha.22",
@@ -41,6 +45,7 @@
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^4.1.7",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.16.1"
   }
 }

@@ -2,7 +2,6 @@ import { useMDXComponents as getMDXComponents } from '@/mdx-components';
 import { generateStaticParamsFor, importPage } from 'nextra/pages';
 
 export const generateStaticParams = generateStaticParamsFor('mdxPath');
-export const runtime = 'experimental-edge';
 
 interface PageProps {
   params: Promise<{
